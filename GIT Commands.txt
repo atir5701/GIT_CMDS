@@ -1,0 +1,74 @@
+git config --global user.name "name"
+git config --global user.email "email"
+git confit --list -> to get the user email and name
+
+1) git status -> to check if given folder is a git repo or not  and other 	status
+ii) git init -> to initialize a folder as a git repo
+iii) git add -> used to add files to staging area 
+	Various option available 
+	to add all files we use --a
+	to add a single file we use git add filename(with extension)
+	it is also used to make a file which in untracked to tracked 
+if our file is in stage area and we modify it then we again need to add it to stage area in order to commit the newly modofoed file 
+
+
+iv) git commit -> to commit files
+	    also to add message with commit we can use 
+	git commit -m "messgae"
+
+v) git log -> to know about  various commit
+
+vi) rm -rf .git -> used to delete the git repo
+
+7) To clone a git repo -> git clone (link of the github repo)
+                                 to give our own name  git clone (link) name we want to give
+		
+8) .gitignore file can be created in a repo and all the files or regex of files and directories mentioned in the .gitignore file are kept untracked by git.
+
+9) git diff -> compare the files and directory between working area and the stagging area.
+
+10) git diff --staged is used to compare the previous commit with the current staging area 
+
+11) git commit -a -m "msg" -> this can be used to directly commit files , by skipping the staging area but this is done only for the tracked files but not for 		the untracked files
+
+12) git rm filename ->; is used to delete a file
+
+13) git mv filename  newname -> is used to rename a file 
+
+14) git rm --cached filename -> this command is used to ignore an already tracking file and make it untracked. Also in doing this we need to add the file name in .gitignore file .
+
+15) git log -> used to see all the commits made
+
+git log -p -> used to sell all the diff changes made
+
+git log --stat ->; used to see all the commits in the a brief way
+
+git log --since = n.days ->; where n is an integer . Help so see the changes in the repo in last n days 
+
+we can also use n.years , n.months etc
+
+16) git commit --amend ->; this command is used to add the changes made to the last commit . By this we can change the commit msg as well as the changes in current stage also gets commited in the previous commit
+
+17) git restore --staged filename ->; this command is used to unstage a file
+
+git restore filename -> command used to match restore the files to the previous commit content
+
+18) git checkout --filename -> this method is used to restore the file to the previous commit content 
+
+19) git checkout -f -> this is used to restore the entire repo to the previous commit stage 
+
+remote -> it is a repository that is on internet it can be on github or any other platform
+
+20) git remote add remotename url 
+to add a remote we use 
+remotename is the shorter name of url metioned itself
+
+git remote -v ->; used to get the url link for pull and push 
+
+21) git push remotename branchname ->; is used to push the code into git repo with branch ->; branchnaame 
+
+to push we must create a repo in github where we want to push and accordingly set the remote and at same time we must make out folder which we are working as a git repo using git init command
+
+22) git checkout -b branchname -> so now a new branch is created and we move to the new branch
+
+23) git checkout branchname -> is used to switch in the branch to branchname 
