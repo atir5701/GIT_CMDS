@@ -88,3 +88,7 @@ git branch --no -merged -> to see all branches which are not merged
 27) git branch -d branchname -> used to delete a branch but gives error if develop is not merged
 
 git branch -D branchname -> no error and branch gets deleted even if not merged
+
+28) pull request is also a way to merge to files on github and also to provide the comments
+
+29) git pull remotename branchname -> this command is used to get content form remote repo to local system and update our local repo
