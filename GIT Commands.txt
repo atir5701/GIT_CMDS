@@ -76,3 +76,15 @@ to push we must create a repo in github where we want to push and accordingly se
 24) git merge branchname -> this command is used to merge the changes made in the branch to the main or master branch
 
 During this merge conflict can occur and we can resolve the merge conflict by selecting the one or both the changes
+
+25) git branch -> used to see all branch in the given repo
+
+git branch -v -> is used to see the branch name , the last commit hash and the  last commit message of the each branch
+
+26) git branch --merged -> used to see all the branches which are merged
+
+git branch --no -merged -> to see all branches which are not merged
+
+27) git branch -d branchname -> used to delete a branch but gives error if develop is not merged
+
+git branch -D branchname -> no error and branch gets deleted even if not merged
