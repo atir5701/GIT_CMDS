@@ -72,3 +72,7 @@ to push we must create a repo in github where we want to push and accordingly se
 22) git checkout -b branchname -> so now a new branch is created and we move to the new branch
 
 23) git checkout branchname -> is used to switch in the branch to branchname 
+
+24) git merge branchname -> this command is used to merge the changes made in the branch to the main or master branch
+
+During this merge conflict can occur and we can resolve the merge conflict by selecting the one or both the changes
