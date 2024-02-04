@@ -92,3 +92,10 @@ git branch -D branchname -> no error and branch gets deleted even if not merged
 28) pull request is also a way to merge to files on github and also to provide the comments
 
 29) git pull remotename branchname -> this command is used to get content form remote repo to local system and update our local repo
+
+30) git push remotename branchname -> use to push the code in the branch with branchname, 
+to we need to switch to the branch which we want to push and then push in that git
+
+git push remotename branch local name : branch name in github -> can be used to push the branch in git hub with the name given after ":"
+
+31) git push -d remotename branchname -> this is used to delete the branch with branch name = branchname  in github
